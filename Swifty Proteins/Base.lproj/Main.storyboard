@@ -161,6 +161,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="tCu-5w-mE2" id="UTC-pM-K7q"/>
                         <outlet property="sceneKitView" destination="bcd-Jl-4DF" id="Epf-by-ucx"/>
+                        <outlet property="selectedElementLabel" destination="KMN-FG-x9A" id="0YS-qA-bW4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AGW-R4-w2c" userLabel="First Responder" sceneMemberID="firstResponder"/>

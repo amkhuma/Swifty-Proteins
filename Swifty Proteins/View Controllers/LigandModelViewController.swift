@@ -18,6 +18,7 @@ class LigandModelViewController: UIViewController {
     var cameraNode : SCNNode!
     var targetCreationTime : TimeInterval = 0
     
+    @IBOutlet weak var selectedElementLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var ligandName : String = ""
     var ListOfAtoms : [Atom] = []
@@ -205,6 +206,18 @@ class LigandModelViewController: UIViewController {
         self.gameScene.rootNode.addChildNode(geometryNode)
     }
     
-    override func tou
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch = touches.first!
+        
+        let location =  touch.location(in: self.sceneKitView)
+        
+        let hitList = self.sceneKitView.hitTest(location, options: nil)
+        
+        if let hitObject = hitList.first {
+            let node = hitObject.node
+            
+            self.selectedElementLabel.text = "Selected Element : \(String(node.name ?? "no-name"))"
+        }
+    }
 }
 
