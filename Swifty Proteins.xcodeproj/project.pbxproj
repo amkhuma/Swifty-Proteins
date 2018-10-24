@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		736D7C6C217DFBFB00BEA044 /* ProteinListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7C6B217DFBFB00BEA044 /* ProteinListViewController.swift */; };
 		736D7C6E217E1DC600BEA044 /* LigandModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7C6D217E1DC600BEA044 /* LigandModelViewController.swift */; };
+		73CAC8272180B5C6002FA39D /* Cylinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CAC8262180B5C6002FA39D /* Cylinder.swift */; };
+		73CE6206217F663D009F5507 /* Atom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE6205217F663D009F5507 /* Atom.swift */; };
 		73D82BB3217DC9C200C96C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D82BB2217DC9C200C96C75 /* AppDelegate.swift */; };
 		73D82BB5217DC9C200C96C75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D82BB4217DC9C200C96C75 /* ViewController.swift */; };
 		73D82BB8217DC9C200C96C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D82BB6217DC9C200C96C75 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		736D7C6B217DFBFB00BEA044 /* ProteinListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinListViewController.swift; sourceTree = "<group>"; };
 		736D7C6D217E1DC600BEA044 /* LigandModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LigandModelViewController.swift; sourceTree = "<group>"; };
+		73CAC8262180B5C6002FA39D /* Cylinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cylinder.swift; sourceTree = "<group>"; };
+		73CE6205217F663D009F5507 /* Atom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atom.swift; sourceTree = "<group>"; };
 		73D82BAF217DC9C200C96C75 /* Swifty Proteins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Proteins.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D82BB2217DC9C200C96C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D82BB4217DC9C200C96C75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +56,15 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		73CE6204217F6621009F5507 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				73CE6205217F663D009F5507 /* Atom.swift */,
+				73CAC8262180B5C6002FA39D /* Cylinder.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		73D82BA6217DC9C200C96C75 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +85,7 @@
 		73D82BB1217DC9C200C96C75 /* Swifty Proteins */ = {
 			isa = PBXGroup;
 			children = (
+				73CE6204217F6621009F5507 /* Modules */,
 				736D7C6A217DFBA600BEA044 /* View Controllers */,
 				73D82BB2217DC9C200C96C75 /* AppDelegate.swift */,
 				73D82BB6217DC9C200C96C75 /* Main.storyboard */,
@@ -162,7 +176,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				73D82BB5217DC9C200C96C75 /* ViewController.swift in Sources */,
+				73CAC8272180B5C6002FA39D /* Cylinder.swift in Sources */,
 				736D7C6E217E1DC600BEA044 /* LigandModelViewController.swift in Sources */,
+				73CE6206217F663D009F5507 /* Atom.swift in Sources */,
 				73D82BB3217DC9C200C96C75 /* AppDelegate.swift in Sources */,
 				736D7C6C217DFBFB00BEA044 /* ProteinListViewController.swift in Sources */,
 			);
