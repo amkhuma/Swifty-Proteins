@@ -19,7 +19,7 @@ class ProteinListViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Proteins"
+        self.title = "Ligands"
         // Do any additional setup after loading the view.
     }
     
@@ -33,19 +33,18 @@ class ProteinListViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
+        let cell : ProteinListTableViewCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! ProteinListTableViewCell
         if (isSearching) {
-            cell.textLabel?.text = self.FilteredLigandsData[indexPath.row]
+            cell.ligandName.text = self.FilteredLigandsData[indexPath.row]
         }
         else
         {
-            cell.textLabel?.text = self.ListOfLigands[indexPath.row]
+            cell.ligandName.text = self.ListOfLigands[indexPath.row]
         }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You selected cell #\(indexPath.row)!")
         if isSearching {
             self.LigandStoredForSegue = self.FilteredLigandsData[indexPath.row]
             performSegue(withIdentifier: "GoTo3DModel", sender: self)

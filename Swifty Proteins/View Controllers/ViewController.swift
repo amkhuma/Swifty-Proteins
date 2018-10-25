@@ -13,34 +13,22 @@ class ViewController: UIViewController {
 
     var ListOfLigands : [String] = []
     @IBOutlet weak var LoginButton: UIButton!
+    var context : LAContext!
     
     @IBAction func Login(_ sender: UIButton) {
-        let context: LAContext = LAContext()
-        
-        print("called login")
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
+        self.context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "TouchID is required to authenticate Swifty Proteins")
         {
-            print("good phone")
-            context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "TouchID is required to authenticate Swifty Proteins")
+            (wasSuccessful, error) in
+            if wasSuccessful
             {
-                (wasSuccessful, error) in
-                if wasSuccessful
-                {
-                    print("Right Finger")
-                    DispatchQueue.main.async {
-                        self.performSegue(withIdentifier: "GoToListView", sender: self)
-                    }
-                }
-                else
-                {
-                    print("Wrong Finger!")
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "GoToListView", sender: self)
                 }
             }
-        }
-        else
-        {
-            print("bad phone")
-            self.LoginButton.isHidden = true
+            else
+            {
+                print("Wrong Finger!")
+            }
         }
     }
     
@@ -72,23 +60,28 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.context = LAContext()
+        
+        //check if phone is compatible with the finger ish
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
+        {
+            self.LoginButton.isHidden = false
+        }
+        else
+        {
+            self.LoginButton.isHidden = true
+        }
+        
         self.getLigands(with: { (data) -> (Void) in
             if let ligand = String(data: data, encoding: .utf8) {
                 for i in ligand.split(separator: "\n") {
                     self.ListOfLigands.append(String(i))
                 }
-                //print(self.ListOfLigands)
             }
         }, with: { (error) -> (Void) in
             print(error.localizedDescription)
         })
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

@@ -27,6 +27,11 @@ class LigandModelViewController: UIViewController {
         super.viewDidLoad()
         
         self.title = "\(self.ligandName)"
+        self.activityIndicator.hidesWhenStopped = true
+        self.selectedElementLabel.isHidden = true
+        DispatchQueue.main.async {
+            self.activityIndicator.startAnimating()
+        }
         
         //call scene kit init functions
         self.initView()
@@ -34,6 +39,7 @@ class LigandModelViewController: UIViewController {
         self.initCamera()
         
         self.getLigandData(ligandName: self.ligandName, with: { (data) -> (Void) in
+            
             self.extractDataAndCreateAtoms(data: data)
             for atomium in self.ListOfAtoms
             {
@@ -46,15 +52,23 @@ class LigandModelViewController: UIViewController {
                     let connection:SCNNode = CylinderLine(parent: self.gameScene.rootNode, v1: source, v2: destination, radius: 0.1, radSegmentCount: 10, color: .gray)
                     self.gameScene.rootNode.addChildNode(connection)
                 }
+                DispatchQueue.main.async {
+                    self.selectedElementLabel.isHidden = false
+                    self.activityIndicator.stopAnimating()
+                }
             }
         }, with: { (error) -> (Void) in
             print(error.localizedDescription)
+            let alert = self.createAlert(title: "ligand error", message: "failed to load ligand data")
+            self.present(alert, animated: true, completion: nil)
         })
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func ShareButtonClick(_ sender: UIButton)
+    {
+        let image = self.sceneKitView.snapshot()
+        let activityController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        present(activityController, animated: true, completion: nil)
     }
     
     func getColor(AtomSymbol : String) -> UIColor
@@ -124,7 +138,7 @@ class LigandModelViewController: UIViewController {
     
     func getLigandData(ligandName : String, with success : @escaping (Data) -> (Void), with erroring : @escaping (Error) -> (Void))
     {
-        let url = URL(string: "https://files.rcsb.org/ligands/view/\(ligandName)_ideal.pdb")
+        let url = URL(string: "https://files.rcsb.org/ligands/view/\(self.ligandName)_ideal.pdb")
         let request = NSMutableURLRequest(url: url!)
         activityIndicator.startAnimating()
         let task = URLSession.shared.dataTask(with: request as URLRequest){
@@ -169,6 +183,16 @@ class LigandModelViewController: UIViewController {
                         }
                     }
                 }
+           }
+           else if atomDetails[0].uppercased() == "END"
+           {}
+           else
+           {
+            DispatchQueue.main.async {
+                let alert = self.createAlert(title: "ligand error", message: "failed to load ligand from the data bank")
+                self.present(alert, animated: true, completion: nil)
+            }
+            return ;
            }
         }
     }
@@ -216,8 +240,16 @@ class LigandModelViewController: UIViewController {
         if let hitObject = hitList.first {
             let node = hitObject.node
             
-            self.selectedElementLabel.text = "Selected Element : \(String(node.name ?? "no-name"))"
+            self.selectedElementLabel.text = "Selected Element : \(String(node.name ?? "No Name"))"
         }
+    }
+    
+    func createAlert(title : String, message : String) -> UIAlertController{
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        return alert
     }
 }
 

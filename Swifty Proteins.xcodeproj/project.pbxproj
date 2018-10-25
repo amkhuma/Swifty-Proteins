@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		736D7C6C217DFBFB00BEA044 /* ProteinListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7C6B217DFBFB00BEA044 /* ProteinListViewController.swift */; };
 		736D7C6E217E1DC600BEA044 /* LigandModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736D7C6D217E1DC600BEA044 /* LigandModelViewController.swift */; };
+		73BEEE672181FC8E00F56BDF /* ProteinListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BEEE662181FC8E00F56BDF /* ProteinListTableViewCell.swift */; };
 		73CAC8272180B5C6002FA39D /* Cylinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CAC8262180B5C6002FA39D /* Cylinder.swift */; };
 		73CE6206217F663D009F5507 /* Atom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE6205217F663D009F5507 /* Atom.swift */; };
 		73D82BB3217DC9C200C96C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D82BB2217DC9C200C96C75 /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		736D7C6B217DFBFB00BEA044 /* ProteinListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinListViewController.swift; sourceTree = "<group>"; };
 		736D7C6D217E1DC600BEA044 /* LigandModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LigandModelViewController.swift; sourceTree = "<group>"; };
+		73BEEE662181FC8E00F56BDF /* ProteinListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinListTableViewCell.swift; sourceTree = "<group>"; };
 		73CAC8262180B5C6002FA39D /* Cylinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cylinder.swift; sourceTree = "<group>"; };
 		73CE6205217F663D009F5507 /* Atom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atom.swift; sourceTree = "<group>"; };
 		73D82BAF217DC9C200C96C75 /* Swifty Proteins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Proteins.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +58,14 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		73BEEE632181F1BA00F56BDF /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				73BEEE662181FC8E00F56BDF /* ProteinListTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		73CE6204217F6621009F5507 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		73D82BB1217DC9C200C96C75 /* Swifty Proteins */ = {
 			isa = PBXGroup;
 			children = (
+				73BEEE632181F1BA00F56BDF /* TableViewCells */,
 				73CE6204217F6621009F5507 /* Modules */,
 				736D7C6A217DFBA600BEA044 /* View Controllers */,
 				73D82BB2217DC9C200C96C75 /* AppDelegate.swift */,
@@ -175,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BEEE672181FC8E00F56BDF /* ProteinListTableViewCell.swift in Sources */,
 				73D82BB5217DC9C200C96C75 /* ViewController.swift in Sources */,
 				73CAC8272180B5C6002FA39D /* Cylinder.swift in Sources */,
 				736D7C6E217E1DC600BEA044 /* LigandModelViewController.swift in Sources */,
@@ -326,6 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Swifty Proteins/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Swifty Proteins/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
