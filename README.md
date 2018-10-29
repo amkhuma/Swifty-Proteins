@@ -8,7 +8,7 @@
   <a href="#credits">Credits</a> 
 </p>
 
-#Touch ID
+# Touch ID
 ![giffy](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/first.gif)
 
 ## Key Features
