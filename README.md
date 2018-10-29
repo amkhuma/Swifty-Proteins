@@ -8,7 +8,8 @@
   <a href="#credits">Credits</a> 
 </p>
 
-![giffy](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/first.gif)  ![screenshot](https://github.com/amkhuma/Swift-Companion/blob/master/Images/Profile.png) ![screenshot](https://github.com/amkhuma/Swift-Companion/blob/master/Images/projects.png) 
+#Touch ID
+![giffy](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/first.gif)
 
 ## Key Features
 
