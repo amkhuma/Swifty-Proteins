@@ -37,7 +37,7 @@ $ open Swifty-Companion.xcodeproj
 
 ## Credits
 
-- [The Swift Guy](http://theswiftguy.com)
-- [Lets Build That App](https://nodejs.org/)
-- [Mpho Kgosisejo](https://mpho-kgosisejo.github.io/portfolio/)
-- [Brain Advent](http://www.brianadvent.com) For his wonderful Scenekit [tutorial](https://www.youtube.com/watch?v=haZmF3ZYIYc&t=1026s).
+- [The Swift Guy](http://theswiftguy.com) .. Great Touch ID [tutorial](https://www.youtube.com/watch?v=4YF_gKNwGwA&t=8s).
+- [Micheal](https://www.youtube.com/watch?v=vnreJRPvd3Y)
+- [Mpho Kgosisejo](https://mpho-kgosisejo.github.io/portfolio/) .. My partner :)
+- [Brain Advent](http://www.brianadvent.com).. For his wonderful Scenekit [tutorial](https://www.youtube.com/watch?v=haZmF3ZYIYc&t=1026s).
