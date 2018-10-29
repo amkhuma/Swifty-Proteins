@@ -20,7 +20,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6U-Gl-rTs">
                                 <rect key="frame" x="152" y="385" width="110" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.65325342465753422" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="5sr-o4-pga"/>
                                     <constraint firstAttribute="height" constant="30" id="Wqg-Vu-5eY"/>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.074509803921568626" green="0.20000000000000001" blue="0.3529411764705882" alpha="0.98121789383561642" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="H6U-Gl-rTs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Vg0-C5-QVT"/>
                             <constraint firstItem="H6U-Gl-rTs" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="spv-VK-8a2"/>
@@ -105,7 +105,7 @@
                                 </connections>
                             </searchBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.074509803920000006" green="0.20000000000000001" blue="0.35294117650000001" alpha="0.98121789380000002" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ACQ-aM-QVt" firstAttribute="trailing" secondItem="cpN-MD-AxH" secondAttribute="trailing" id="DRH-LC-oMK"/>
                             <constraint firstItem="hB0-Aj-dXV" firstAttribute="trailing" secondItem="cpN-MD-AxH" secondAttribute="trailing" id="HXr-xf-c1e"/>
@@ -166,7 +166,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="scc-gB-jbP" firstAttribute="top" secondItem="bcd-Jl-4DF" secondAttribute="bottom" constant="8" id="4rj-Ed-FT3"/>
                             <constraint firstItem="KMN-FG-x9A" firstAttribute="leading" secondItem="bcd-Jl-4DF" secondAttribute="leading" constant="7" id="5qs-qO-8fK"/>

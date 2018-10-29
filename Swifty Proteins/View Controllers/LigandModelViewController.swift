@@ -64,6 +64,10 @@ class LigandModelViewController: UIViewController {
         })
     }
     
+    override func willMove(toParentViewController parent: UIViewController?) {
+        
+    }
+    
     @IBAction func ShareButtonClick(_ sender: UIButton)
     {
         let image = self.sceneKitView.snapshot()
