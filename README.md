@@ -12,7 +12,7 @@
 ![giffy](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/first.gif)
 
 # 3D Model
-![giffy](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/second.gif)
+![giffy](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/Second.gif)
 
 ## Key Features
 
