@@ -8,7 +8,7 @@
   <a href="#credits">Credits</a> 
 </p>
 
-Touch ID
+# Touch ID
 ![giffy](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/first.gif)
 
 # 3D Model
@@ -23,7 +23,7 @@ Touch ID
 * Scenekit
 * Touch ID
 * Searching
-* image sharing
+* Image sharing
 
 ## How To Use
 
@@ -45,4 +45,4 @@ $ open Swifty-Companion.xcodeproj
 - [The Swift Guy](http://theswiftguy.com) .. Great Touch ID [tutorial](https://www.youtube.com/watch?v=4YF_gKNwGwA&t=8s).
 - [Micheal](https://www.youtube.com/watch?v=vnreJRPvd3Y)
 - [Mpho Kgosisejo](https://mpho-kgosisejo.github.io/portfolio/) .. My partner :)
-- [Brain Advent](http://www.brianadvent.com).. For his wonderful Scenekit [tutorial](https://www.youtube.com/watch?v=haZmF3ZYIYc&t=1026s).
+- [Brain Advent](http://www.brianadvent.com) .. For his wonderful Scenekit [tutorial](https://www.youtube.com/watch?v=haZmF3ZYIYc&t=1026s).
