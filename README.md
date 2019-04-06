@@ -14,9 +14,10 @@
 # 3D Model
 ![giffy](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/second.gif)
 
-<img src='https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/Screenshot 2019-04-06 at 09.57.33.png'/>
-<img src='https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/Screenshot 2019-04-06 at 09.58.19.png'/>
-
+<div style="width : 100%;">
+<img style="float : left;" src='https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/Screenshot 2019-04-06 at 09.57.33.png'/>
+<img style="float : left;" src='https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/Screenshot 2019-04-06 at 09.58.19.png'/>
+</div>
 ## Key Features
 
 * Auto-Layout
