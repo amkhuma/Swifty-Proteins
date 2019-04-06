@@ -14,6 +14,9 @@
 # 3D Model
 ![giffy](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/second.gif)
 
+![giffy](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/Screenshot 2019-04-06 at 09.57.33.png)
+![giffy](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/Screenshot 2019-04-06 at 09.58.19.png)
+
 ## Key Features
 
 * Auto-Layout
