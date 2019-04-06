@@ -14,8 +14,8 @@
 # 3D Model
 ![giffy](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/second.gif)
 
-![](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/Screenshot 2019-04-06 at 09.57.33.png)
-![](https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/Screenshot 2019-04-06 at 09.58.19.png)
+<img src='https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/Screenshot 2019-04-06 at 09.57.33.png'/>
+<img src='https://github.com/amkhuma/Swifty-Proteins/blob/master/ReadMeResources/Screenshot 2019-04-06 at 09.58.19.png'/>
 
 ## Key Features
 
